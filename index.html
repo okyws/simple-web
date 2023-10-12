@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="icon" href="assets/img/oky.webp" />
+    <script
+      src="https://kit.fontawesome.com/a9b021cbbe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Oky Wahyu Setyaji</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">
+        <img src="assets/img/oky.webp" alt="logo" />
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#feature" class="nav-link" onclick="showComingSoon()"
+              >Feature</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#skill" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link dropdown">Find Me</a>
+            <ul class="nav-menu submenu submenu-hide">
+              <li>
+                <a href="https://github.com/okyws"
+                  ><i class="fab fa-github"></i
+                  ><span class="icon-text">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/okyws/"
+                  ><i class="fab fa-linkedin"></i>
+                  <span class="icon-text">Linkedin</span></a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/okyows"
+                  ><i class="fab fa-facebook"></i
+                  ><span class="icon-text">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="mailto:okywahyu1@gmail.com"
+                  ><i class="fas fa-envelope"></i
+                  ><span class="icon-text">Email</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <button id="toggle-dark-mode" class="btn-switch" type="button">
+              <i id="sun" class="fa-regular fa-sun"></i>
+              <i id="moon" class="fa-regular fa-moon hidden"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <section class="hero" id="home">
+          <article class="content-left">
+            <h1>Oky Wahyu Setyaji</h1>
+            <p>
+              Hello, I'm Oky Wahyu Setyaji. A Web Developer based in Bandung,
+              Jawa Barat, Indonesia.
+            </p>
+            <button class="btn-order" type="submit">
+              <a href="#contact">Get in touch</a>
+            </button>
+          </article>
+          <aside class="content-right">
+            <img src="assets/img/developer.png" alt="hero" class="hero-img" />
+          </aside>
+        </section>
+
+        <section class="skills" id="skill">
+          <h1>Skills</h1>
+          <p>Technology Stack</p>
+          <figure class="img-area" id="skillContainer"></figure>
+        </section>
+
+        <section id="about" class="about">
+          <aside class="content-right">
+            <figure class="photo">
+              <img src="assets/img/oky.webp" alt="Oky" />
+              <figcaption class="description">
+                <h3>Oky Wahyu Setyaji</h3>
+                <p>Developer</p>
+              </figcaption>
+            </figure>
+          </aside>
+          <article class="content-left">
+            <h2>About Me</h2>
+            <p>
+              I am Oky, a final-year student at Langlangbuana University,
+              majoring in Computer Science. My passion for Information
+              Technology, particularly in Web Development and Cyber Security,
+              drives my commitment to excellence. With a relentless pursuit of
+              knowledge in the ever-evolving IT domain, I am eager to contribute
+              as a Back End & Full Stack Web Developer. By leveraging my skills,
+              I aim to create innovative and efficient solutions that enhance
+              user experiences and meet the demands of modern technology.
+            </p>
+          </article>
+        </section>
+
+        <section id="contact" class="contact">
+          <article class="content-left">
+            <div class="contact-content">
+              <h2>Contact</h2>
+              <p>
+                Are you looking for a fast-performing and user-friendly website
+                to represent your product or business? or looking for any kind
+                of consultation? or want to ask questions? or have some advice
+                for me or just want to say "Hi 👋" in any case feel free to Let
+                me know. I will do my best to respond back. 😊 The quickest way
+                to reach out to me is via an email.
+              </p>
+            </div>
+            <a href="mailto:okywahyu1@gmail.com" class="contact-email"
+              >okywahyu1@gmail.com</a
+            >
+          </article>
+        </section>
+      </div>
+
+      <button
+        id="myBtn"
+        title="Go to top"
+        type="submit"
+        onclick="topFunction()"
+      >
+        Top
+      </button>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Dasar Pemrograman Web <span id="getyear"></span> <br />
+        Made with <span id="heart"></span> by Oky Wahyu Setyaji
+      </p>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
